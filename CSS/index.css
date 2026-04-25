@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+ header {
+   width: 100%;
+   height: 4.5rem;
+   font-family: "Montserrat", sans-serif;
+   border-bottom: 1px solid rgba(53, 51, 51, 0.3);
+   background-color: #f3fffd;
+   position: sticky;
+   top: 3;
+   z-index: 50;
+ }
+
+.nav-bar {
+    display: flex;
+   justify-content: space-between;
+   padding-top: 10px;
+   padding-left: 3rem;
+   padding-right: 3rem;
+   align-items: center;
+   font-size: 10px;
+}
+
+.nav-bar i {
+    margin: 5px;
+    color: rgb(63, 63, 65);
+}
+.logo {
+   font-size: 22px;
+   font-weight: 800;
+}
+
+.nav-bar .nav-links {
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+nav ul li {
+    position: relative;
+}
+
+.nav-bar a {
+    color: rgb(14, 13, 13);
+    font-size: 13px;
+    padding: 5px;
+    text-decoration: none;
+    padding-right: 1rem;
+}
+.btn {
+    background-color: blue;
+    border: none;
+    padding: 10px 10px;
+    border-radius: 5px;
+    color: antiquewhite;
+    cursor: pointer;
+}
+.btn span {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #d5f1f1;
+    padding: 20px 10px;
+    top: 100%;
+    right: 0;
+    left: 0;
+    min-width: 5rem;
+    z-index: 10;
+
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu a {
+    display: inline-block;
+    color: rgb(19, 17, 17);
+
+}
+
+.hero {
+   height: 100vh - 4.5rem;
+   width: 100vh - 4.5rem;
+   display: flex;
+   align-items: center;
+   background-image: url(/images/vaction\ plane.jpg);
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
+   color: rgb(13, 13, 14);
+   padding: 40px;
+}
+
+.hero-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.hero-text {
+    max-width: 500px;
+}
+
+.hero-text h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero-text p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.btn2 {
+    display: inline-block;
+    padding: 10px 10px;
+    background-color: blue;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s;
+
+}
+
+.btn2:hover {
+    background-color: aqua;
+    transform: translateY(-3px);
+}
+
+.hero-image img {
+    width: 250px;
+    gap: 40px;
+    border-radius: 10px;
+}
+
+@media (max-width:767px) {
+    .nav-bar a {
+        display: none;
+    }
+    .hero-container {
+        flex-direction: row;
+        
+    }
+
+    .hero-image img {
+        width: 250px;
+        margin-top: 20px;
+    }
+
+    .hero-text h1 {
+        font-size: 2rem;
+    }
+}
