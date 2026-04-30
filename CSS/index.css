@@ -36,6 +36,7 @@ html {
 .logo {
    font-size: 22px;
    font-weight: 800;
+   color: rgb(8, 8, 75);
 }
 
 .nav-bar .nav-links {
@@ -60,23 +61,29 @@ nav ul li {
     padding-right: 1rem;
 }
 .btn {
-    background-color: blue;
+    background-color: rgb(48, 48, 133);
     border: none;
     padding: 10px 10px;
     border-radius: 5px;
     color: antiquewhite;
     cursor: pointer;
+    transition: 0.3s;
 }
-.btn span {
-    display: none;
-    font-size: 24px;
-    cursor: pointer;
+
+.btn:hover {
+    background-color: rgb(248, 185, 11);
+    transform: translateY(-3px);
+}
+
+.span {
+    background-color: rgb(231, 214, 214);
+    font-size: 20px;
 }
 
 .dropdown-menu {
     display: none;
     position: absolute;
-    background-color: #d5f1f1;
+    background-color: #e8f9fa;
     padding: 20px 10px;
     top: 100%;
     right: 0;
@@ -117,17 +124,20 @@ nav ul li {
 }
 
 .hero-text {
-    max-width: 500px;
+    max-width: 35rem;
+    margin-left: 20px;
 }
 
 .hero-text h1 {
     font-size: 3rem;
     margin-bottom: 20px;
+    color: rgb(65, 40, 136);
 }
 
 .hero-text p {
     font-size: 1.2rem;
     margin-bottom: 20px;
+    color: rgb(25, 25, 109);
 }
 
 .btn2 {
@@ -146,10 +156,34 @@ nav ul li {
     transform: translateY(-3px);
 }
 
+.btn3 {
+    display: inline-block;
+    padding: 10px 10px;
+    margin: 20px;
+    background-color: rgb(233, 210, 7);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s;
+
+}
+
+.btn3:hover {
+    background-color: rgb(255, 0, 43);
+    transform: translateY(-3px);
+}
+
+
 .hero-image img {
-    width: 250px;
-    gap: 40px;
+    width: 200px;
+    margin: 5px;
+    box-shadow: 0 10px 30px rgb(102, 99, 99);
     border-radius: 10px;
+    transition: 0.5s;
+}
+
+.hero-image img:hover {
+    transform: translateY(-3px);
 }
 
 @media (max-width:767px) {
@@ -162,8 +196,14 @@ nav ul li {
     }
 
     .hero-image img {
-        width: 250px;
-        margin-top: 20px;
+        width: 120px;
+        border-radius: 10px;
+        
+    }
+
+    .hero-text {
+        max-width: 20rem;
+        margin-left: 10px;
     }
 
     .hero-text h1 {
