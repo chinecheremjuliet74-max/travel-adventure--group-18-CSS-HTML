@@ -23,8 +23,8 @@ html {
     display: flex;
    justify-content: space-between;
    padding-top: 10px;
-   padding-left: 3rem;
-   padding-right: 3rem;
+   padding-left: 2rem;
+   padding-right: rem;
    align-items: center;
    font-size: 10px;
 }
@@ -84,13 +84,11 @@ nav ul li {
     display: none;
     position: absolute;
     background-color: #e8f9fa;
-    padding: 20px 10px;
     top: 100%;
     right: 0;
     left: 0;
     min-width: 5rem;
-    z-index: 10;
-
+    z-index: 100;
 }
 
 .dropdown:hover .dropdown-menu {
@@ -103,6 +101,10 @@ nav ul li {
 
 }
 
+body {
+    font-family: "Open Sans", sans-serif;
+}
+
 .hero {
    height: 100vh - 4.5rem;
    width: 100vh - 4.5rem;
@@ -112,7 +114,6 @@ nav ul li {
    background-repeat: no-repeat;
    background-position: center;
    background-size: cover;
-   color: rgb(13, 13, 14);
    padding: 40px;
 }
 
