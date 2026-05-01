@@ -24,19 +24,25 @@ html {
    justify-content: space-between;
    padding-top: 10px;
    padding-left: 2rem;
-   padding-right: rem;
+   padding-right: 3rem;
    align-items: center;
    font-size: 10px;
 }
 
 .nav-bar i {
-    margin: 5px;
+    width: auto;
+    margin: 5px 5px;
     color: rgb(63, 63, 65);
 }
 .logo {
-   font-size: 22px;
+   font-size: 20px;
    font-weight: 800;
    color: rgb(8, 8, 75);
+} 
+
+.logo p {
+    font-size: 10px;
+    font-weight: 400;
 }
 
 .nav-bar .nav-links {
@@ -55,7 +61,8 @@ nav ul li {
 
 .nav-bar a {
     color: rgb(14, 13, 13);
-    font-size: 13px;
+    font-size: 10px;
+    font-weight: 600;
     padding: 5px;
     text-decoration: none;
     padding-right: 1rem;
@@ -63,7 +70,7 @@ nav ul li {
 .btn {
     background-color: rgb(48, 48, 133);
     border: none;
-    padding: 10px 10px;
+    padding: 3px 5px;
     border-radius: 5px;
     color: antiquewhite;
     cursor: pointer;
@@ -78,6 +85,7 @@ nav ul li {
 .span {
     background-color: rgb(231, 214, 214);
     font-size: 20px;
+    margin-left: 15px;
 }
 
 .dropdown-menu {
@@ -88,7 +96,7 @@ nav ul li {
     right: 0;
     left: 0;
     min-width: 5rem;
-    z-index: 100;
+    z-index: 10;
 }
 
 .dropdown:hover .dropdown-menu {
