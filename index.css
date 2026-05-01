@@ -1,0 +1,215 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    background-image: url(./Images/Aeroplane.jpg);
+    background-size: cover;
+    text-align: center;
+    padding: 21px;
+    color: white;
+    height: 5rem
+}
+header img{
+    position: absolute;
+   left: 1px;
+   width: 5rem;
+   height: 5rem;
+   top: 0;
+}
+.aero img{
+    position: absolute;
+   left: 80rem;
+   width: 15rem;
+   height: 5rem;
+   top: 0;
+}
+.text{
+    display: flex;
+    flex-direction: column;
+    background-image: url(/Images/airport);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 0.0rem;
+    width: 100%;
+    height: 25rem;
+}
+.text h2{
+    font-size: 3rem;
+    color: blue;
+    margin-top: 3rem;
+    text-align: center;
+    font-size: 4rem;
+    font-weight: 600;
+}
+
+.text p{
+    font-size: 2rem;
+    font-weight: 800;
+    color: white;
+    margin-top: 2rem;
+    text-align: center;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.mission{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+    gap: 2rem;
+    margin-top: 1px;
+    justify-content: center;
+    align-content: center;
+}
+.mission div{
+    width: 100%;
+    border: 1px solid rgba(36, 36, 226, 0.2);
+    padding: 1rem ;
+    
+}
+.mission div :hover{
+    border: 4px solid white;
+    padding: 1rem ;
+    color: white;
+    background-color: blue;
+    border-radius: 3rem;
+}
+.mission h2{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2rem;
+}
+.mission p{
+    text-align: justify;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1rem;
+}
+.us{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+.choose{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    width: 100%;
+    gap: 1rem;
+    margin-top: 1rem;
+    padding: 1rem;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./Images/city\ 2);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+}
+.choose div{
+    width: 100%;
+    border: 1px solid rgba(36, 36, 226, 0.2);
+    padding: 1rem ;
+    background-color: skyblue;
+    border-radius: 20px;
+}
+.choose div :hover{
+    width: 100%;
+    border: 1px solid rgba(36, 36, 226, 0.2);
+    padding: 1rem ;
+    background-color: black;
+    border-radius: 20px;
+    color: white;
+}
+
+.choose h3{
+    font-size: 2rem;
+    color: black;
+    line-height: 2rem;
+    text-align: center;
+}
+.choose p{
+    font-size: 1rem;
+    color: white;
+    line-height: 1rem;
+    text-align: justify;
+    font-weight: 500;
+}
+.mtop{
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    margin-top: 2rem;
+    justify-self: center;
+
+}
+.members{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    width: 60rem;
+    height: 13rem;
+    gap: 1rem;
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    justify-self: center;
+}
+.members div{
+    width: 10rem;
+    height: 11rem;
+    border: 1px solid rgba(36, 36, 227, 0.2);
+    padding: 0 ;
+    background-color: white;
+    border-radius: 20px;
+    text-align: center;
+    font-size: 1.4rem;
+    color: black;
+    margin-top: 0.5rem;    
+}
+.members div img{
+    width: 5rem;
+    height: 5rem;
+    border-radius: 20%;
+    margin-top: 0.5rem; 
+}
+.history{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin-top: 2rem;
+    justify-content: center;
+    align-items: center;
+    justify-self: center;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin-top: 2rem;
+    justify-content: center;
+    align-items: center;
+    justify-self: center;
+}
+.our-history p{
+    font-size: 1.5rem;
+    color: black;
+    line-height: 2rem;
+    text-align: center;
+    text-align: justify;
+}
+
+@media(max-width: 768px){
+    .mission{
+        grid-template-columns: 1fr;
+    }
+    .choose{
+        grid-template-columns: 1fr;
+    }
+    .members{
+        grid-template-columns: 1fr;
+    }
+}
+
+
