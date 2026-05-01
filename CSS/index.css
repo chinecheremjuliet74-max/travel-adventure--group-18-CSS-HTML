@@ -304,6 +304,232 @@ body {
     transform: scale(1.05);
 }
 
+.packages-section {
+    padding: 4rem 0;
+    background-color: rgb(215, 236, 236);
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    color:black;
+    margin-bottom: 1rem;
+}
+
+.packages-intro {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 3rem;
+    color:black;
+    font-size: 1.5rem;
+}
+
+.packages-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+/* Package Card Styles */
+.package-card {
+    background-color:rgb(172, 239, 239);
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    position: relative;
+    border: 2px solid transparent;
+    display: flex;
+    flex-direction: column;
+}
+
+.package-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.package-card p {
+    font-size: 1.7rem;
+
+}
+
+/* Popular Badge */
+.package-card.popular {
+    border-color:rgb(152, 178, 201);
+    transform: scale(1.05);
+}
+
+.popular-badge {
+    position: absolute;
+    top: -15px;
+    right: 20px;
+    background-color:#e67e22;
+    padding: 0.5rem 1rem;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 0.85rem;
+    box-shadow: 0 4px 10px rgba(243, 156, 18, 0.3);
+}
+
+.package-card h3 {
+    color:black;
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+}
+
+.package-price {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color:black;
+    margin-bottom: 0.5rem;
+}
+
+.package-price span {
+    font-size: 1rem;
+    color:blue;
+    font-weight: 400;
+}
+
+.package-duration {
+    color:black;
+    margin-bottom: 1.5rem;
+    font-size: 0.95rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 2px solid blue;
+}
+
+/* Package Features List */
+.package-features {
+    margin: 1.5rem 0;
+    flex-grow: 1;
+}
+
+.package-features li {
+    padding: 0.75rem 0;
+    color:black;
+    border-bottom: 1px solid black;
+    position: relative;
+    padding-left: 2rem;
+}
+
+.package-features li:last-child {
+    border-bottom: none;
+}
+
+/* Checkmark Icon */
+.package-features li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color:black;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+/* Book Now Button */
+.package-card .btn {
+    width: 100%;
+    margin-top: 1.5rem;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.875rem 2rem;
+    border-radius: 50px;
+    font-weight: 600;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: none;
+    font-size: 1rem;
+}
+
+.btn-primary {
+    background-color:blue;
+    color:aqua;
+}
+
+.btn-primary:hover {
+    background-color: #e67e22;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(243, 156, 18, 0.4);
+}
+
+
+   /*PACKAGE INFO SECTION */
+.package-info-section {
+    padding: 4rem 0;
+    background-color:rgb(175, 237, 237);
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.info-item {
+    text-align: center;
+    padding: 2rem;
+    background-color:white;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.info-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.info-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.info-item h4 {
+    color:rgb(244, 176, 88);
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+}
+
+.info-item p {
+    color:gray;
+    font-size: 0.95rem;
+}
+
+/*CTA SECTION */
+
+.cta-section {
+    padding: 4rem 0;
+    background-color: rgb(187, 236, 220);
+    text-align: center;
+    color:black;
+}
+
+.cta-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.cta-section p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.btn-secondary {
+    background-color:rgb(3, 103, 103);
+    color:rgb(194, 124, 33);
+    border: 2px solid white;
+}
+
+.btn-secondary:hover {
+    background-color:white;
+    color: var(--primary-color);
+}
+
 .contact {
     padding:80px 20px;
     background: #f8fbfb;
@@ -426,6 +652,14 @@ textarea {
     border-radius: 12px;
 }
 
+.footer {
+    background-color: var(--dark-color);
+    color: rgb(6, 73, 68);
+    text-align: center;
+    padding: 2rem 0;
+    margin-top: 3rem;
+}
+
 
 @media (max-width:767px) {
     .nav-bar a {
@@ -457,6 +691,15 @@ textarea {
     .date-group {
         flex-direction: column;
     }
+
+     .packages-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .info-grid {
+        grid-template-columns: 1fr;
+    }
+    
 }
 
 @media (max-width: 1023px) {
@@ -488,6 +731,17 @@ textarea {
     }
 
      .destinations-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+     .packages-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .package-card.popular {
+        transform: scale(1);
+    }
+    
+    .info-grid {
         grid-template-columns: repeat(2, 1fr);
     }
 }
