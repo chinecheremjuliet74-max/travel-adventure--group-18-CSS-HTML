@@ -530,6 +530,152 @@ body {
     color: var(--primary-color);
 }
 
+.mission{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+    height: 100%;
+    gap: 2rem;
+    margin-top: 1px;
+    justify-content: center;
+    align-content: center;
+}
+.mission div{
+    width: 100%;
+    border: 1px solid rgba(36, 36, 226, 0.2);
+    padding: 1rem ;
+    
+}
+.mission div :hover{
+    border: 4px solid white;
+    padding: 1rem ;
+    color: white;
+    background-color: rgb(165, 228, 225);
+    border-radius: 3rem;
+}
+.mission h2{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2rem;
+}
+.mission p{
+    text-align: justify;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1rem;
+}
+.us{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+.choose{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    width: 100%;
+    gap: 1rem;
+    margin-top: 1rem;
+    padding: 1rem;
+    justify-content: center;
+    align-items: center;
+    
+}
+.choose div{
+    width: 100%;
+    border: 1px solid rgba(36, 36, 226, 0.2);
+    padding: 1rem ;
+    background-color: rgb(135, 235, 222);
+    border-radius: 20px;
+}
+.choose div :hover{
+    width: 100%;
+    border: 1px solid rgba(36, 36, 226, 0.2);
+    padding: 1rem ;
+    background-color: rgb(54, 49, 49);
+    border-radius: 20px;
+    color: white;
+}
+
+.choose h3{
+    font-size: 2rem;
+    color: black;
+    line-height: 2rem;
+    text-align: center;
+}
+.choose p{
+    font-size: 1rem;
+    color: white;
+    line-height: 1rem;
+    text-align: justify;
+    font-weight: 500;
+}
+.mtop{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    margin-top: 2rem;
+    justify-self: center;
+
+}
+.members{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    width: 100%;
+    height: 18rem;
+    gap: 8rem;
+    padding: 30px;
+    margin-top: 1rem;
+    justify-self: center;
+}
+.members div{
+    width: 13rem;
+    height: 10rem;
+    padding: 10px ;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4rem;
+    color: rgb(39, 38, 38);
+    margin: 0;    
+}
+.members div img{
+    width: 13rem;
+    height: 12rem;
+    border-radius: 15px;
+    margin-top: 0.5rem; 
+}
+.history{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin-top: 5rem;
+    justify-content: center;
+    align-items: center;
+    justify-self: center;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    justify-content: center;
+    align-items: center;
+    justify-self: center;
+    
+}
+.our-history p{
+    font-size: 1.5rem;
+    color: rgb(40, 41, 41);
+    line-height: 2rem;
+    text-align: center;
+    text-align: justify;
+}
+
 .contact {
     padding:80px 20px;
     background: #f8fbfb;
@@ -684,8 +830,21 @@ textarea {
         font-size: 2rem;
     }
 
-    .contact-container {
-        flex-direction: column;
+    .mission{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .choose{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .members{
+        grid-template-columns: repeat(2, 1fr);
+        margin-left: 50px;
+    }
+    .history {
+        margin-top: 40rem;
+        width: 70%;
     }
 
     .date-group {
@@ -693,13 +852,16 @@ textarea {
     }
 
      .packages-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 1fr;
     }
     
     .info-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 1fr;
     }
-    
+
+    .contact-container {
+        flex-direction: column;
+    }
 }
 
 @media (max-width: 1023px) {
