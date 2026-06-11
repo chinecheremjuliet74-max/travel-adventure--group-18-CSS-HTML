@@ -15,63 +15,90 @@
      <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pacifico&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
-        <nav class="nav-bar">
+    <!--------CHIBUZOR CHINECHEREM JULIET ---------------->
+    <header>
+        
+        <div class="logo">
+            <img src="https://static.vecteezy.com/system/resources/previews/006/230/235/non_2x/creative-initial-letter-j-air-travel-logo-design-template-eps10-vector.jpg" alt="">
+            JOJIA
+        </div>
 
-            <div class="logo">
-                <span class="span-logo"><i class="fa-solid fa-plane-up"></i></span>
-                <h1> JOJIA TRAVELS</h1>
+         <nav class="nav">
+            
+                <a href="#Home">home</a>
+                <a href="#destinations">destination</a>
+                <a href="#packages">packages</a>
+                <a href="#about">about</a>
+                <a href="#contact">contact</a>
+
+                <a href="#" class="book-btn">Book Now</a>
+            </ul>
+        </nav>
+
+            <input type="checkbox" id="menu-toggle">
+
+                <label for="menu-toggle" class="hamburger">
+                    <span i class="fa-solid fa-bars"></span>
+                </label>
             </div>
 
-            <ul class="nav-links">
-                <li><a href="#Home"><span><i class="fa-solid fa-house-user"></i></span></i>HOME</a></li>
+        </div>
 
-                <li class="dropdown"> 
-                    <a href="#destination"><span><i class="fa-solid fa-plane-arrival"></i></span>DESTINATIONS</a>
-                    <ul class="dropdown-menu">
-                        <li> <a href="#">Dubai (UAE)</a> </li>
-                        <li> <a href="#">FRANCE (Paris)</a> </li>
-                        <li> <a href="#">CAPE TOWN(South Africa)</a> </li>
-                        <li><a href="#">JAPAN (Tokyo)</a></li>
-                    </ul>
-                </li>
-
-                <li><a href="#packages"><span><i class="fa-solid fa-cart-arrow-down"></i></i></span>PACKAGES</a></li>
-                <li><a href="#about"><span><i class="fa-solid fa-circle-info"></i></span>ABOUT</a></li>
-                <li><a href="#contact"><span><i class="fa-solid fa-address-card"></i></span>CONTACT</a></li>
-            </ul>
-            <button class="btn">book now </button>
-            <span class="span"><i class="fa-solid fa-bars"></i></span>
-        </nav>
     </header>
 
-    <section id="HOME"  class="hero">
 
-        <div class="hero-container">
+    <section id="Home"  class="slider">
 
-            <div class="hero-text">
-                <h1>Explore the world with us</h1>
-                <p>Discover new destinations, expericence different culture and
-                    create uforgettble memories with our expertly crafted travel packages.
-                    whether you are seeking adventure or relaxation, we have something perfect for you. YOUR DREAM VACTAION START FROM HERE.
-                </p>
+        <div class="slides">
+
+            <div class="slide slide1">
+                <div class="content">
+                    <h1> Your dream vacation start from here..</h1>
                 
-                <a href="#" class="btn2">Start Your Journey</a>
-                <a href="#" class="btn3">learn more</a>
+                    <a href="#" class="btn2">Start Your Journey....</a>
+
+                </div>
+                
             </div>
 
-            
+            <div class="slide slide2">
+                <div class="content">
+                    <h1> Luxury shopping and adventure.</h1>
+                    
+                    <a href="#">Book Now......</a>
+                </div>
+
+            </div>
+
+            <div class="slide slide3">
+                <div class="content">
+                    <h1>Your dream tropical escape.</h1>
+                    
+                    <a href="#">Learn More..........</a>
+                </div>
+
+            </div>
+
         </div>
-        
+
     </section>
 
-    <section class="destinations-section">
+
+
+
+<!----------------------------------IMMACULATE ILEAGU-------------------->
+    <section id="destinations" class="destinations-section">
+
+        <div class="section-title">
+            <h2>Popular Destinations</h2>
+            <p>Choose your next adventure</p>
+        </div>
 
         <div class="Destination-container">
-            <div id="dubai" class="destination-card">
-                <div class="card-image">
-                    <img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=800&h=600&fit=crop" alt="Dubai, UAE">
-                </div>
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=800&h=600&fit=crop" alt="Dubai, UAE">
+
                 <div class="card-content">
                     <h3>Dubai</h3>
                     <p class="country">United Arab Emirates</p>
@@ -80,10 +107,12 @@
                     <button class="learn-more-btn">Learn More</button>
                 </div>
             </div>
-                <div id="paris" class="destination-card">
-                <div class="card-image">
-                    <img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=800&h=600&fit=crop" alt="Paris, France">
-                </div>
+            
+            
+                
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=800&h=600&fit=crop" alt="Paris, France">
+                
                 <div class="card-content">
                     <h3>Paris</h3>                        
                     <p class="country">France</p>
@@ -92,12 +121,13 @@
                     <button class="learn-more-btn">Learn More</button>
                 </div>
             </div>
+            
+            
 
-            <div id="cape town" class="destination-card">
-                <div class="card-image">
-                    <img src="https://images.unsplash.com/photo-1580060839134-75a5edca2e99?w=800&h=600&fit=crop" alt="Cape Town, South Africa">
-                </div>                    
-                
+           
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1580060839134-75a5edca2e99?w=800&h=600&fit=crop" alt="Cape Town, South Africa">
+
                 <div class="card-content">
                     <h3>Cape Town</h3>
                     <p class="country">South Africa</p>
@@ -105,133 +135,143 @@
                     <p class="price">From <span>$1,099</span></p>
                     <button class="learn-more-btn">Learn More</button>
                 </div>
-            </div>
-
-            <div id="tokyo" class="destination-card">
-                <div class="card-image">
+            </div>                    
+                
+            
+                <div class="card">
                     <img src="https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?w=800&h=600&fit=crop" alt="Tokyo, Japan">
-                </div>
-
-                <div class="card-content">
+                    
+                    <div class="card-content">
                     <h3>Tokyo</h3>
                     <p class="country">Japan</p>
                     <p class="description">A mesmerizing blend of ancient tradition and cutting-edge technology. Experience temples, cherry blossoms, and neon-lit streets.</p>
                     <p class="price">From <span>$1,599</span></p>
                     <button class="learn-more-btn">Learn More</button>
                 </div>
-            </div>
-
-            <div id="bali" class="destination-card">
-                <div class="card-image">
-                    <img src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=800&h=600&fit=crop" alt="Bali, Indonesia">
+                
                 </div>
-                <div class="card-content">
+
+                
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=800&h=600&fit=crop" alt="Bali, Indonesia">
+
+                    <div class="card-content">
                     <h3>Bali</h3>                        
                     <p class="country">Indonesia</p>
                     <p class="description">Tropical paradise with lush rice terraces, ancient temples, and pristine beaches. Perfect for relaxation, adventure, and spiritual renewal.</p>
                     <p class="price">From <span>$899</span></p>
                     <button class="learn-more-btn">Learn More</button>
                 </div>
-            </div>
-              
-            <div id="new york" class="destination-card">
-                <div class="card-image">
-                    <img src="https://images.unsplash.com/photo-1496442226666-8d4d0e62e6e9?w=800&h=600&fit=crop" alt="New York, USA">
+            
                 </div>
-                <div class="card-content">
+                
+
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1496442226666-8d4d0e62e6e9?w=800&h=600&fit=crop" alt="New York, USA">
+
+                    <div class="card-content">
                     <h3>New York</h3>
                     <p class="country">United States</p>
                     <p class="description">The city that never sleeps. Experience Broadway shows, world-class dining, iconic skyline, and the energy of Times Square.</p>
                     <p class="price">From <span>$1,199</span></p>
                     <button class="learn-more-btn">Learn More</button>
-                </div>              
-            </div>
-                
-            <div id="barcelona" class="destination-card">
-                <div class="card-image">
-                    <img src="https://images.unsplash.com/photo-1583422409516-2895a77efded?w=800&h=600&fit=crop" alt="Barcelona, Spain">
+                </div>    
                 </div>
-                <div class="card-content">
+                          
+            
+                
+            
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1583422409516-2895a77efded?w=800&h=600&fit=crop" alt="Barcelona, Spain">
+
+                    <div class="card-content">
                     <h3>Barcelona</h3>
                     <p class="country">Spain</p>
                     <p class="description">Gaudí's masterpiece city where art, architecture, and Mediterranean culture converge. Enjoy beaches, tapas, and vibrant nightlife.</p>
                     <p class="price">From <span>$1,099</span></p>
                     <button class="learn-more-btn">Learn More</button>
                 </div>
-            </div>
-
-            <div id="sydney" class="destination-card">
-                <div class="card-image">
-                    <img src="https://images.unsplash.com/photo-1506973035872-a4ec16b8e8d9?w=800&h=600&fit=crop" alt="Sydney, Australia">
                 </div>
-                <div class="card-content">
+                
+            
+
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1506973035872-a4ec16b8e8d9?w=800&h=600&fit=crop" alt="Sydney, Australia">
+
+                    <div class="card-content">
                     <h3>Sydney</h3>
                     <p class="country">Australia</p>
                     <p class="description">Stunning harbor city with iconic Opera House, beautiful beaches, and laid-back Aussie lifestyle. Perfect blend of urban and coastal living.</p>
                     <p class="price">From <span>$1,799</span></p>
                     <button class="learn-more-btn">Learn More</button>
                 </div>
-            </div>
-
-            <div id="Iceland" class="destination-card">
-                <div class="card-image">
-                    <img src="https://images.unsplash.com/photo-1504829857797-ddff29c27927?w=800&h=600&fit=crop" alt="Reykjavik, Iceland">
                 </div>
-                <div class="card-content">
+                
+            
+
+            
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1504829857797-ddff29c27927?w=800&h=600&fit=crop" alt="Reykjavik, Iceland">
+
+                    <div class="card-content">
                     <h3>Reykjavik</h3>
                     <p class="country">Iceland</p>
                     <p class="description">Land of fire and ice. Witness Northern Lights, stunning waterfalls, geothermal hot springs, and otherworldly volcanic landscapes.</p>
                     <p class="price">From <span>$1,399</span></p>
                     <button class="learn-more-btn">Learn More</button>
                 </div>
-            </div>
-
-            <div id="santorini" class="destination-card">
-                <div class="card-image">
-                    <img src="https://images.unsplash.com/photo-1613395877344-13d4a8e0d49e?w=800&h=600&fit=crop" alt="Santorini, Greece">
                 </div>
-                <div class="card-content">
+                
+
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1613395877344-13d4a8e0d49e?w=800&h=600&fit=crop" alt="Santorini, Greece">
+
+                    <div class="card-content">
                     <h3>Santorini</h3>
                     <p class="country">Greece</p>
                     <p class="description">Whitewashed buildings, blue-domed churches, and breathtaking sunsets. This Greek island paradise offers romance and stunning views.</p>
                     <p class="price">From <span>$1,249</span></p>
                     <button class="learn-more-btn">Learn More</button>
                 </div>
-            </div>
-
-            <div id="machu picchu" class="destination-card">
-                <div class="card-image">
-                    <img src="https://images.unsplash.com/photo-1587595431973-160d0d94add1?w=800&h=600&fit=crop" alt="Machu Picchu, Peru">
                 </div>
-                <div class="card-content">
+            
+            
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1587595431973-160d0d94add1?w=800&h=600&fit=crop" alt="Machu Picchu, Peru">
+
+                    <div class="card-content">
                     <h3>Machu Picchu</h3>
                     <p class="country">Peru</p>
                     <p class="description">Ancient Incan citadel high in the Andes Mountains. Experience mystical ruins, stunning mountain scenery, and rich cultural history.</p>
                     <p class="price">From <span>$1,349</span></p>
                     <button class="learn-more-btn">Learn More</button>
                 </div>
-            </div>
-
-            <div id="maldives" class="destination-card">
-                <div class="card-image">
-                    <img src="https://images.unsplash.com/photo-1514282401047-d79a71a590e8?w=800&h=600&fit=crop" alt="Maldives">
                 </div>
-                <div class="card-content">
+            
+           
+            <div class="card">
+                    <img src="https://images.unsplash.com/photo-1514282401047-d79a71a590e8?w=800&h=600&fit=crop" alt="Maldives">
+
+                     <div class="card-content">
                     <h3>Maldives</h3>
                     <p class="country">Maldives</p>
                     <p class="description">Ultimate tropical luxury with crystal-clear waters, overwater bungalows, and pristine white sand beaches. Pure paradise on earth.</p>
                     <p class="price">From <span>$2,199</span></p>
                     <button class="learn-more-btn">Learn More</button>
-                </div>
             </div>
+            </div>
+           
+            
         </div>
     </section>
 
-     <section class="packages-section">
+    <!----------------------------ONAH OZOANI---------------------->
+     <section id="packages" class="packages-section">
 
         <div class="package-container">
-            <h2 class="section-title">Our Travel Packages</h2>
-            <p class="packages-intro">Whether you're a budget traveler or seeking luxury, we have the perfect package for you. All packages include personalized itineraries and 24/7 support.</p>
+
+            <h1>Our Travel Packages</h1>
+            <p>Whether you're a budget traveler or seeking luxury, we have the perfect package for you. All packages include personalized itineraries and 24/7 support.</p>
             
             <div class="packages-grid">
                 <!-- Elite Package -->
@@ -376,7 +416,6 @@
         </div>
     </section>
 
-    <!-- CTA Section -->
     <section class="cta-section">
         <div class="container">
             <h2>Ready to Start Your Adventure?</h2>
@@ -385,20 +424,29 @@
         </div>
     </section>
 
-     <section id="mission">
+
+<!-------------------------AUGSTINE EZENWA------------->
+
+
+     <section id="about" class="mission-section">
+
+        <h1>About us</h1>
+
         <div class="mission">
+
+            <div>
+                <img src="https://medias.moulinrouge.fr/app/uploads/2022/06/iStock-1277095847-1024x768.jpg" alt="">
+            </div>
             <div>
                 <h2>Our Mission</h2>
                 <p>At Jojia Travels, our mission is to provide exceptional travel experiences that prioritize safety, comfort, and personalized service. We are committed to creating unforgettable journeys for our clients while ensuring their well-being throughout the entire travel process.</p>
-            </div>
-            <div>
-                <h2>Our Vision</h2>
+
+                <h3>Our Vision</h2>
                 <p>Our vision at Jojia Travels is to be the leading travel agency known for delivering unparalleled travel experiences that exceed our clients' expectations. We strive to be recognized for our commitment to safety, personalized service, and creating unforgettable memories for travelers worldwide.</p>
             </div>
         </div>
-    </section>
-
-    <section id="Travel">
+    
+    <div class="Travel">
         <div class="us">
             <h2>Why Travel With Us</h2>
         </div>
@@ -406,39 +454,39 @@
         <div class="choose">
             
             <div>
-                <h3>Personalized Travel Experiance</h3>
+                <h2>Personalized Travel Experiance</h2>
                 <p>Jojia Travels focuses on creating trips that match your interests, budget, and preferences. Whether you want a relaxing getaway or an adventure-packed journey, every detail is tailored to suit you.</p>
             </div>
             <div>
-                <h3>Access to Unique Destinations</h3>
-
+                <h2>Access to Unique Destinations</h2>
                 <p>Jojia Travels helps you explore both popular attractions and hidden gems, giving you a richer and more authentic travel experience.</p>
 
             </div>
             <div>
-                <h3><b>Affordable and Flexible Packages</b></h3>
+                <h2>Affordable and Flexible Packages</h2>
                 <p>We offer competitive pricing without compromising quality. Flexible packages allow you to adjust your itinerary based on your needs and budget</p>
             </div>
 
             <div>
-                <h3>Dependable Customer Support at All Times</h3>
+                <h2>Dependable Customer Support at All Times</h2>
                 <p>Our dedicated customer support team is available 24/7 to assist you with any questions or concerns you may have during your travel plans.</p>
             </div>
             
             <div>
-                <h3>Safety and Comfort</h3>
+                <h2>Safety and Comfort</h2>
                 <p>
                     Your safety and comfort are a top priority at Jojia Travels. We work with trusted partners and ensure all arrangements meet high standards.
                 </p>
             </div>
             <div>
-                <h3>Time-Saving Convenience</h3>
+                <h2>Time-Saving Convenience</h2>
                 <p>
                     Planning a trip can be time-consuming. Jojia Travels handles all the logistics, allowing you to focus on enjoying your journey.
                 </p>
             </div>
         </div>
-    </section>
+    </div>
+
     <section>
             <div class="mtop">
                 <h2>Meet the Team Members</h2>
@@ -491,75 +539,75 @@
         </div>
     </section>
     
+<!----------------------JOSHPEN AKPATA--------------------->
+    <section id="contact" class="contact-section">
+        <div class="contact-container">
 
-    <section class="contact">
-    <div class="contact-container">
+            <div class="contact-form">
+               <h2>Plan Your Journey</h2>
 
-        <div class="contact-form">
-            <h2>Plan Your Journey</h2>
+                <form>
+                    <input type="text" placeholder="Full Name" required>
+                   <input type="email" placeholder="Email Address" required>
+                   <input type="tel" placeholder="Phone Number">
 
-            <form>
-                <input type="text" placeholder="Full Name" required>
-                <input type="email" placeholder="Email Address" required>
-                <input type="tel" placeholder="Phone Number">
-
-                <select required>
+                  <select required>
                     <option value="">Preferred Destination</option>
                     <option>Paris</option>
                     <option>Dubai</option>
                     <option>Bali</option>
                     <option>Cape Town</option>
-                </select>
+                  </select>
 
-                <div class="date-group">
+                  <div class="date-group">
                     <input type="date">
                     <input type="date">
-                </div>
+                  </div>
 
-                <input type="number" placeholder="Number of Travelers">
+                  <input type="number" placeholder="Number of Travelers">
 
-                <select>
+                  <select>
                     <option value="">Budget Range</option>
                     <option>$500 - $1000</option>
                     <option>$1000 - $3000</option>
                     <option>$3000+</option>
-                </select>
+                  </select>
 
-                <textarea placeholder="Special Requests"></textarea>
+                  <textarea placeholder="Special Requests"></textarea>
 
-                <button type="submit">Send Inquiry</button>
-            </form>
-        </div>
+                   <button type="submit">Send Inquiry</button>
+                </form>
+            </div>
 
-        <div class="contact-info">
-            <h2>Contact Information</h2>
+            <div class="contact-info">
+               <h2>Contact Information</h2>
 
-            <p><strong>📍 Address:</strong> 12 Travel Road, Lagos</p>
-            <p><strong>📞 Phone:</strong> +234 800 123 4567</p>
-            <p><strong>📧 Email:</strong> info@travelagency.com</p>
-            <p><strong>⏰ Hours:</strong> Mon - Fri (9am - 6pm)</p>
+                <p><strong>📍 Address:</strong> 12 Travel Road, Lagos</p>
+                <p><strong>📞 Phone:</strong> +234 800 123 4567</p>
+               <p><strong>📧 Email:</strong> info@travelagency.com</p>
+               <p><strong>⏰ Hours:</strong> Mon - Fri (9am - 6pm)</p>
 
-            <div class="socials">
+                <div class="socials">
                 <a href="#">Facebook</a>
                 <a href="#">Instagram</a>
                 <a href="#">Twitter</a>
+                </div>
             </div>
+
         </div>
 
-    </div>
-
-    <div class="map">
+        <div class="map">
         <iframe 
             src="https://maps.google.com/maps?q=lagos&t=&z=13&ie=UTF8&iwloc=&output=embed">
         </iframe>
-    </div>
-</section>
+        </div>
+    </section>
 
- <footer class="footer">
+    <footer class="footer">
     <div class="container">
         <p>&copy; 2026 JOJIA Travel Agency. All rights reserved.</p>
     </div>
-</footer>
+    </footer>
 
 </body>
 </html>

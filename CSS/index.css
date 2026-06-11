@@ -8,251 +8,214 @@ html {
     scroll-behavior: smooth;
 }
 
- header {
-    width: 100%;
-    height: 4.5rem;
-    font-family: "Montserrat", sans-serif;
-    border-bottom: 1px solid rgba(208, 235, 233, 0.3);
-    background-color: #e0f8f8;
+header{
     position: sticky;
     top: 0;
-    z-index: 50;
- }
-
-.nav-bar {
+    z-index: 1000;
+    background: #e7e3e3;
     display: flex;
     justify-content: space-between;
-    position: relative;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 2rem;
-    padding-right: 3rem;
     align-items: center;
-    font-size: 10px;
+    padding: 10px 8%;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    
 }
 
-.nav-bar i {
-    width: auto;
-    margin: 5px 5px;
-    color: rgb(63, 63, 65);
+.logo{
+    font-size: 28px;
+    font-weight: bold;
+    color: #0d6efd;
 }
-.logo {
+
+.logo img {
+    width: 70px;
+    height: 60px;
+    margin: 10px;
+}
+
+.nav  {
     display: flex;
-   font-size: 20px;
-   font-weight: 800;
-   color: rgb(8, 8, 75);
-} 
-
-.logo h1 {
-    font-size: 20px;
-    font-weight: 800;
-}
-
-.nav-bar .nav-links {
-    justify-content: center;
     align-items: center;
+    gap: 25px;
 }
 
-nav ul {
-    display: flex;
-    list-style: none;
-    align-items: center;
-}
-nav ul li {
-    position: relative;
-}
-
-.nav-bar a {
-    color: rgb(14, 13, 13);
-    font-size: 10px;
-    font-weight: 600;
-    padding: 5px;
+.nav a {
     text-decoration: none;
-    padding-right: 1rem;
-}
-.btn {
-    background-color: rgb(14, 114, 128);
-    border: none;
-    padding: 3px 3px;
-    border-radius: 2px;
-    color: antiquewhite;
-    cursor: pointer;
-    transition: 0.3s;
+    color: #333;
+    font-weight: 500;
+    transition: 3s;
 }
 
-.btn:hover {
-    background-color: rgb(248, 185, 11);
-    transform: translateY(-3px);
+.nav a:hover{
+    color: #0d6efd;
 }
 
-.span {
-    background-color: rgb(185, 184, 184);
-    font-size: 20px;
-    margin-left: 15px;
+.book-btn{
+    background: #0d6efd;
+    color: white !important;
+    padding: 10px 20px;
+    border-radius: 30px;
 }
 
-
-.dropdown-menu {
+.menu-toggle{
     display: none;
-    position: absolute;
-    background-color: #e8f9fa;
-    top: 100%;
-    right: 0;
-    left: 0;
-    min-width: 5rem;
-    z-index: 10;
 }
 
-.dropdown:hover .dropdown-menu {
-    display: block;
+.hamburger{
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
 }
 
-.dropdown-menu a {
-    display: inline-block;
-    color: rgb(19, 17, 17);
-
+.hamburger span{
+    width: 28px;
+    height: 3px;
+    background: #333;
+    cursor: pointer;
 }
 
 body {
     font-family: "Open Sans", sans-serif;
-    background-color: #daf7f1;
+    background: #f8fafc;
+    
 }
 
-.hero {
-   height: 100vh - 4.5rem;
-   width: 100vh - 4.5rem;
-   display: flex;
-   align-items: center;
-   background-image: url(/images/SFR_pool_flyingfish_My-Fiji-Shot-e1504175928733.jpg);
-   background-repeat: no-repeat;
-   background-position: center;
-   background-size: cover;
-   padding: 40px;
+.slider {
+    width: 100%;
+    height: 70vh;
+    overflow: hidden;
 }
 
-.hero-container {
-    width: 90%;
-    justify-items: center;
+.slides {
     display: flex;
-}
-.hero-text h1 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-    color: rgb(182, 196, 241);
+    width: 300%;
+    height: 100%;
+    animation:slider 10s infinite;
 }
 
-.hero-text p {
-    font-size: 1rem;
-    max-width: 40rem;
-    margin-bottom: 20px;
-    color: rgb(214, 233, 248);
+.slide {
+    width: 33.333%;
+    height: 70vh;
+    flex-shrink: 0;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.btn2 {
-    display: inline-block;
-    padding: 10px 10px;
-    background-color: blue;
+.slide1 {
+    background-image: url(https://static0.thetravelimages.com/wordpress/wp-content/uploads/2023/08/airplanes-on-the-tarmac-at-an-airport-at-sunset.jpg?w=1200&h=675&fit=crop);
+}
+.slide2 {
+    background-image: url(https://media.timeout.com/images/106214629/image.jpg);
+}
+
+.slide3 {
+    background-image: url(https://i.natgeofe.com/n/4bbf4c88-cb93-443e-bc47-1918cc83689e/black-dragon-pool-park-yunnan-china.jpg);
+}
+
+.content {
+    text-align: center;
     color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: 0.3s;
-
+    padding: 30px;
+    border-radius: 20px;
 }
+ .content h1 {
+    font-size: 4rem;
+    margin-bottom: 15px;
+ }
 
-.btn2:hover {
-    background-color: aqua;
-    transform: translateY(-3px);
-}
 
-.btn3 {
+ .content a {
     display: inline-block;
-    padding: 10px 10px;
-    margin: 20px;
-    background-color: rgb(233, 210, 7);
-    color: white;
+    padding: 12px 25px;
+    margin-top: 10px;
+    background: white;
+    color: #0077ff;
     text-decoration: none;
-    border-radius: 5px;
-    transition: 0.3s;
+    border-radius: 30px;
+    font-weight: bold;
+ }
 
-}
+ @keyframes slider{
+    0%,25%{
+        transform: translateX(0);
+    }
 
-.btn3:hover {
-    background-color: rgb(255, 0, 43);
-    transform: translateY(-3px);
-}
+    33%,58%{
+        transform: translateX(-33.333%);
+    }
 
+    66%,91%{
+        transform: translateX(-66.666%);
+    }
 
-.hero-image img {
-    width: 500px;
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-   
-}
+    100%{
+        transform: translateX(0);
+    }
+ }
 
-.hero-image img:hover {
-    transform: translateY(-3px);
-}
 
 /* ILEAGU IMMACULATE */
+
+
 .destinations-section {
-    background-color: var(--light-color);
+    padding: 80px 8%;
+    background: #f8fafc;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.section-title h2{
+    font-size: 3rem;
+    color: #222;
+    margin-top: 50px;
+}
+
+.section-title p{
+    color: #666;
     margin-top: 10px;
 }
 
-.destination-container {
+.Destination-container{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    
-    margin: 0 auto;
-    padding: 0 2rem;
-    gap: 1rem;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    padding: 20px;
 }
 
-.destination-card {
+.card{
     background-color: white;
-    border-radius: var(--border-radius);
+    border-radius: 20px;
     overflow: hidden;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-    transition: var(--transition);
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    transition: 2s;
+    
 }
 
-.destination-card:hover {
+.card:hover{
     transform: translateY(-10px);
-    box-shadow: 0 12px 24px rgba(0,0,0,0.2);
 }
 
-.card-image {
+.card img{
     width: 100%;
     height: 250px;
-    overflow: hidden;
-}
-
-.card-image img {
-    width: 100%;
-    height: 100%;
     object-fit: cover;
-    transition: var(--transition);
-}
-
-.destination-card:hover .card-image img {
-    transform: scale(1.1);
 }
 
 .card-content {
-    padding: 1.5rem;
-    flex-grow: 1;
-    display: flex;
-    flex-direction: column;
+    padding: 20px;
+   
 }
 
 .card-content h3 {
-    font-family: 'Montserrat', sans-serif;
     font-size: 1.5rem;
     color: var(--dark-color);
-    margin-bottom: 0.3rem;
+    margin-bottom: 10px;
 }
 
 .country {
@@ -301,9 +264,13 @@ body {
     transform: scale(1.05);
 }
 
+
+
+
       /* ONAH OZOANI */
 .packages-section {
-    margin-top: 20px;
+    margin-top: 30px;
+    padding: 100px;
     
 }
 
@@ -313,7 +280,16 @@ body {
     color:rgb(22, 22, 22);
     margin-bottom: 1rem;
 }
+ .package-container h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+ }
 
+ .package-container p{
+    font-size: 1rem;
+    margin-top: 20px;
+    margin-bottom: 60px;
+ }
 .packages-intro {
     text-align: center;
     
@@ -527,6 +503,18 @@ body {
 }
 
 /* AGUSTINE EZENWA*/
+
+.mission-section {
+     margin-top: 50px;
+    padding: 100px;
+   
+}
+
+.mission-section h1 {
+    text-align: center;
+    margin-bottom: 50px;
+    
+}
 .mission{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -537,41 +525,44 @@ body {
     justify-content: center;
     align-content: center;
 }
-.mission div{
-    width: 100%;
-    border: 1px solid rgba(36, 36, 226, 0.2);
-    padding: 1rem ;
-    
+
+.mission img {
+    height: 500px;
+    width: 700px;
 }
-.mission div :hover{
-    border: 4px solid white;
-    padding: 1rem ;
-    color: white;
-    background-color: rgb(165, 228, 225);
-    border-radius: 3rem;
-}
+
 .mission h2{
+    margin-top: 50px;
+    margin-bottom: 15px;
     text-align: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 1rem;
+    
+    font-size: 20px;
+}
+
+.mission h3{
+    text-align: center;
+    
+    margin-top: 30px;
+    margin-bottom: 15px;
+    font-size: 20px;
 }
 .mission p{
     text-align: justify;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 0.7rem;
+    
+    font-size: 15px;
+    word-spacing: 6px;
 }
 .us{
     display: flex;
     flex-direction: column;
     width: 100%;
-    margin-top: 2rem;
+    margin-top: 50px;
     justify-content: center;
     align-items: center;
 }
 .choose{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
     width: 100%;
     gap: 1rem;
     margin-top: 1rem;
@@ -582,23 +573,18 @@ body {
 }
 .choose div{
     width: 100%;
+    height: 200px;
+    background-color: white;
     border: 1px solid rgba(36, 36, 226, 0.2);
     padding: 1rem ;
-    border-radius: 20px;
-}
-.choose div :hover{
-    width: 100%;
-    border: 1px solid rgba(36, 36, 226, 0.2);
-    padding: 1rem ;
-    background-color: rgb(43, 58, 58);
-    border-radius: 20px;
-    color: white;
+    border-radius: 10px;
 }
 
-.choose h3{
-    font-size: 1rem;
+.choose h2{
+    font-size: 1.5rem;
+    margin-bottom: 10px;
     color: rgb(25, 25, 26);
-    font-weight: 800;
+    font-weight: 600;
     line-height: 2rem;
     text-align: center;
 }
@@ -607,7 +593,7 @@ body {
     color: rgb(27, 27, 27);
     line-height: 1rem;
     text-align: justify;
-    font-weight: 500;
+    font-weight: 200;
 }
 .mtop{
    margin-top: 20px;
@@ -626,12 +612,14 @@ body {
     width: 250px;
     height: 200px;
     border-radius: 5px;
+    margin-bottom: 1rem;
 }
 
 /* AKPATA NDUBUSI JOSEPH*/
-.contact {
+.contact-section {
+    margin-top: 80px;
     padding:80px 20px;
-    background: #f8fbfb;
+    background: #e4ecec;
     font-family:'Poppins', sans-serif;
 }
 
@@ -776,6 +764,10 @@ textarea {
         font-size: 2rem;
     }
 
+    .hero-text p {
+        max-width: 90%;
+    }
+
     .mission{
         grid-template-columns: 1fr 1fr;
     }
@@ -807,13 +799,132 @@ textarea {
 }
 
 @media (max-width: 1023px) {
+
+    .hero-text p {
+        max-width: 100%;
+    }
     .container {
         padding: 0 1rem;
     }
 
-    .destinations-grid {
-        grid-template-columns: repeat(2, 1fr)
+    .destinations-section{
+        padding: 5px;
     }
+
+    .Destination-container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+        padding: 20px;
+    }
+
+    .packages-section{
+        padding: 10px;
+    }
+
+    .card{
+        background-color: white;
+        border-radius: 20px;
+        overflow: hidden;
+        box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        transition: 2s;
+    
+    }
+
+    .mission-section {
+        margin-top: 30px;
+        padding: 50px;
+    }
+
+    .mission{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+        height: 100%;
+        gap: 1rem;
+        margin-top: 1px;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .mission img {
+        height: 400px;
+        width: 300px;
+    }
+
+    .mission h2{
+        margin-top: 50px;
+        margin-bottom: 15px;
+        text-align: center;
+        font-size: 20px;
+    }
+
+   .mission h3{
+        text-align: center;
+        margin-top: 30px;
+        margin-bottom: 15px;
+        font-size: 20px;
+    }
+
+    .mission p{
+        text-align: justify;
+        font-size: 15px;
+        word-spacing: 6px;
+    }
+
+    .choose{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+        gap: 1rem;
+        margin-top: 1rem;
+        padding: 1rem;
+        justify-content: center;
+        align-items: center;
+    
+    }
+
+    .choose div{
+        width: 100%;
+        height: 350px;
+        background-color: white;
+        border: 1px solid rgba(36, 36, 226, 0.2);
+        padding: 1rem ;
+        border-radius: 10px;
+    }
+
+    .choose h2{
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+        color: rgb(25, 25, 26);
+        font-weight: 600;
+        line-height: 2rem;
+        text-align: center;
+    }
+
+    .choose p{
+        font-size: 1rem;
+        color: rgb(27, 27, 27);
+        line-height: 1rem;
+        text-align: justify;
+        font-weight: 200;
+    }
+
+    .members{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        margin-top: 0.5rem;
+        gap: 1rem;
+        justify-self: center;
+        margin-bottom: 20px;
+    }
+
+    .members img {
+        width: 250px;
+        height: 200px;
+        border-radius: 5px;
+    }
+
 }
 
 @media (max-width:767px) {
@@ -822,12 +933,32 @@ textarea {
         max-width: fit-content;
         
     }
-    .nav-bar a {
-        display: none;
-        margin-bottom: 10px;
+    
+    .hamburger{
+        display: flex;
     }
-    .btn {
-        display: none;
+
+    .nav{
+        position: absolute;
+        top:70px;
+        left: 0;
+        width: 100%;
+        background: rgb(32, 32, 32);
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        max-height: 0;
+        overflow: hidden;
+        transition: 0.4s;
+    }
+
+    #menu-toggle:checked ~ .nav{
+        max-height: 300px;
+        padding: 20px 0;
     }
 
     .hero-container {
@@ -838,10 +969,35 @@ textarea {
         font-size: 20px;
     }
 
-     .destinations-grid {
-        grid-template-columns: repeat(1, 1fr);
+    .hero-text p {
+        max-width: 100%;
     }
-     .packages-grid {
+
+    .destinations-section{
+        padding: 0;
+    }
+
+    .Destination-container{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 30px;
+    
+    }
+
+    .card{
+        background-color: white;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        transition: 2s;
+    
+    }
+
+    .packages-section {
+        padding: 10px;
+    }
+    
+    .packages-grid {
         grid-template-columns: repeat(1, 1fr);
     }
     
@@ -849,9 +1005,98 @@ textarea {
         transform: scale(1);
     }
 
-    .members{
+    .mission-section {
+        margin-top: 30px;
+        padding: 30px;
+    }
+
+    .mission{
+        display: grid;
         grid-template-columns: repeat(1, 1fr);
-        margin-left: 50px;
+        width: 100%;
+        height: 100%;
+        gap: 2rem;
+        margin-top: 1px;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .mission img {
+        height: 200px;
+        width: 400px;
+    }
+
+    .mission h2{
+        margin-top: 50px;
+        margin-bottom: 15px;
+        text-align: center;
+        font-size: 20px;
+    }
+
+    .mission h3{
+        text-align: center;
+        margin-top: 30px;
+        margin-bottom: 15px;
+        font-size: 20px;
+    }
+
+    .mission p{
+        text-align: justify;
+        font-size: 15px;
+        word-spacing: 6px;
+    }
+
+    .choose{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+        gap: 1rem;
+        margin-top: 1rem;
+        padding: 1rem;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .choose div{
+        width: 100%;
+        height: 350px;
+        background-color: white;
+        border: 1px solid rgba(36, 36, 226, 0.2);
+        padding: 1rem ;
+        border-radius: 10px;
+    }
+
+    .choose h2{
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+        color: rgb(25, 25, 26);
+        font-weight: 600;
+        line-height: 2rem;
+        text-align: center;
+    }
+
+    .choose p{
+        font-size: 1rem;
+        color: rgb(27, 27, 27);
+        line-height: 1rem;
+        text-align: justify;
+        font-weight: 200;
+    }
+
+    .members{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin-top: 1rem;
+        gap: 2rem;
+        justify-self: center;
+        margin-bottom: 20px;
+        padding: 20px;
+}
+    .members img {
+        width: 150px;
+        height: 200px;
+        border-radius: 5px;
+        padding: 5px;
     }
 
     
