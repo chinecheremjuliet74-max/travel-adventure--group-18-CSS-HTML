@@ -57,6 +57,10 @@ header{
     border-radius: 30px;
 }
 
+.menu {
+    display: none;
+}
+
 .menu-toggle{
     display: none;
 }
@@ -82,7 +86,7 @@ body {
 
 .slider {
     width: 100%;
-    height: 70vh;
+    height: 100vh;
     overflow: hidden;
 }
 
@@ -95,7 +99,7 @@ body {
 
 .slide {
     width: 33.333%;
-    height: 70vh;
+    height: 100vh;
     flex-shrink: 0;
     background-size: cover;
     background-position: center;
@@ -933,9 +937,27 @@ textarea {
         max-width: fit-content;
         
     }
+
+    .logo{
+        width: 50px;
+        
+    }
+
+    .logo img{
+        width: 40px;
+        height: 40px;
+        margin: 2px;
+    }
     
     .hamburger{
+        display: none;
+    }
+
+    .menu{
         display: flex;
+        flex-direction: row;
+        gap: 5px;
+        text-decoration: none;
     }
 
     .nav{
@@ -943,13 +965,11 @@ textarea {
         top:70px;
         left: 0;
         width: 100%;
-        background: rgb(32, 32, 32);
-
+        background: rgb(153, 11, 11);
         display: flex;
         flex-direction: column;
         align-items: center;
         gap: 20px;
-
         box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
         max-height: 0;
         overflow: hidden;
